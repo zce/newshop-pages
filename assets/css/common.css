@@ -692,7 +692,7 @@ ul.brand-list li {
 .item-list .subitem dt {
 	float: left;
 	padding: 3px 6px 0 0;
-	width: 54px;
+	width: 80px;
 	text-align: right;
 	font-weight: 700;
 	line-height: 22px;
@@ -707,6 +707,7 @@ ul.brand-list li {
 	float: left;
 	overflow: hidden;
 	padding: 3px 0 0;
+	margin: 0 10px;
 	width: 415px;
 }
 
