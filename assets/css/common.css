@@ -673,15 +673,13 @@ ul.brand-list li {
 }
 
 .item-list .subitem {
-	float: left;
-	padding: 0 4px 0 8px;
-	width: 650px;
+	padding: 0 10px;
 }
 
 .item-list .subitem dl {
 	overflow: hidden;
 	padding: 6px 0;
-	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
 	zoom: 1;
 }
 
@@ -704,11 +702,8 @@ ul.brand-list li {
 }
 
 .item-list .subitem dd {
-	float: left;
 	overflow: hidden;
-	padding: 3px 0 0;
-	margin: 0 10px;
-	width: 415px;
+	padding: 3px 5px;
 }
 
 .item-list .subitem dd em {
