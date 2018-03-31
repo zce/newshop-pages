@@ -45,7 +45,7 @@
 }
 
 .price,.sum,.shopname,.itxt {
-	font-family: "微软雅黑";
+	font-family: "å¾®è½¯é›…é»‘";
 }
 
 .shopname {
@@ -135,7 +135,6 @@ a.increment {
 }
 
 .sumprice {
-	width: 200px;
 	line-height: 26px;
 	text-align: right;
 }
@@ -150,21 +149,26 @@ a.increment {
 
 .summoney {
 	color: #c81623;
-	font: 16px "微软雅黑";
+	font: 16px "å¾®è½¯é›…é»‘";
 }
 
-a.sum-btn {
+.sum-btn {
 	position: relative;
 	display: block;
 	overflow: hidden;
 	width: 96px;
 	height: 52px;
 	background: #e54346;
+	border: 0;
 	color: #fff;
 	text-align: center;
 	font-size: 18px;
 	font-family: "Microsoft YaHei";
 	line-height: 52px;
+}
+
+.sum-btn:hover {
+	background: #bf3a3c;
 }
 
 .del {
@@ -189,7 +193,7 @@ a.sum-btn {
 .sui-nav.nav-tabs>li>a {
 	padding: 10px 20px;
 	border: 0;
-	font-family: "微软雅黑";
+	font-family: "å¾®è½¯é›…é»‘";
 }
 
 .sui-nav.nav-tabs>.active>a {
@@ -233,7 +237,7 @@ a.sum-btn {
 
 .money {
 	color: #c81623;
-	font: 14px "微软雅黑";
+	font: 14px "å¾®è½¯é›…é»‘";
 }
 
 .incar {
@@ -354,7 +358,7 @@ a.sum-btn {
 .checkout-steps {
 	padding: 25px;
 	border: 1px solid #ddd;
-	font-family: "微软雅黑";
+	font-family: "å¾®è½¯é›…é»‘";
 }
 
 .step-tit {
@@ -384,7 +388,7 @@ a.sum-btn {
 
 .price {
 	color: #e12228;
-	font: 14px "微软雅黑";
+	font: 14px "å¾®è½¯é›…é»‘";
 	font-weight: 700;
 }
 
@@ -450,6 +454,10 @@ ul.payType li {
 	_bottom: -1px;
 }
 
+.addr-item .name:hover {
+	border: 1px solid #c81623;
+}
+
 .addr-item .name.selected span {
 	display: block;
 }
@@ -511,7 +519,21 @@ ul.send-detail li {
 }
 
 .sendGoods {
-	background: #feedef;
+	background: #fff5f6;
+}
+
+.sendGoods ul {
+	padding: 10px 0;
+}
+
+.sendGoods ul + ul {
+	border-top: 1px dashed #ccc;
+}
+
+.sendGoods img {
+	max-height: 100px;
+	display: block;
+	margin: 0 auto;
 }
 
 .num,.exit {
@@ -528,7 +550,7 @@ ul.send-detail li {
 }
 
 .list em {
-	font-family: "微软雅黑";
+	font-family: "å¾®è½¯é›…é»‘";
 }
 
 .trade {
@@ -548,12 +570,30 @@ ul.send-detail li {
 	margin: 0 0 10px;
 	padding: 15px 45px;
 	border-radius: 0;
-	font: 18px "微软雅黑";
+	font-size: 20px;
 	font-weight: 700;
 }
 
-.sendGoods img {
-	max-height: 100px;
-	display: block;
-	margin: 0 auto;
+.static {
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 1.2;
+	color: #444;
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+.sui-modal {
+	width: 565px;
+}
+
+.order-status {
+  margin: 50px 0;
+  padding: 50px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 3em;
+	font-weight: normal;
+	line-height: 1;
+  color: #c81623;
 }

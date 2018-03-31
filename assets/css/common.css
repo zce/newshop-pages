@@ -410,11 +410,11 @@ ul.brand-list li {
 .shopArea .shopcar {
 	position: relative;
 	margin: 30px auto -1px;
-	width: 180px;
 }
 
 .shopArea .shopcar a {
-	padding: 4px 42px;
+	padding: 4px 30px 4px 42px;
+	/* position: relative; */
 }
 
 .shopArea .car {
@@ -423,7 +423,7 @@ ul.brand-list li {
 	width: 30px;
 	height: 30px;
 	background-image: url(../img/icons.png);
-	background-position: 160px -81px;
+	background-position: -404px -80px;
 }
 
 .shopcar .btn-default {
@@ -435,24 +435,44 @@ ul.brand-list li {
 
 .shopcarlist {
 	display: none;
-	margin: -1px 0 0 -70px;
-	padding: 10px;
-	width: 194px;
+	position: absolute;
+	right: 0;
+	padding: 10px 15px;
+	width: 230px;
 	border: 1px solid #dadada;
 	background: #fff;
+	box-shadow: 0 0 15px #ccc;
+	z-index: 1000;
+}
+
+.shopcarlist li {
+	list-style: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 4px 0;
+}
+
+.shopcarlist li + li {
+	border-top: 1px dotted #eee;
+}
+
+.show-shopcar:hover .shopcarlist {
+	display: block;
 }
 
 .shopnum {
 	position: absolute;
-	top: -5px;
-	right: 62px;
+	top: -8px;
+	right: 10px;
 	padding: 4px;
-	height: 6px;
-	border-radius: 6px;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
 	background: #c81623;
 	color: #fff;
-	font-size: 5px;
-	line-height: 6px;
+	font-size: 10px;
+	line-height: 1;
 }
 
 .NavList .all-sort {
@@ -556,6 +576,10 @@ ul.brand-list li {
 .Mod-list h4 {
 	font-weight: 400;
 	font-size: 16px;
+}
+
+.Mod-list img {
+	height: 90px;
 }
 
 .Mod-copyright ul.helpLink li {
@@ -916,8 +940,9 @@ ul.brand-list li {
 
 .tbar-checkout {
 	position: relative;
-	padding: 5px 110px 5px 5px;
+	padding: 5px 120px 5px 5px;
 	height: 40px;
+	text-align: right;
 }
 
 .tbar-checkout .jtc-number strong {
@@ -952,6 +977,10 @@ ul.brand-list li {
 	color: #FFF;
 	text-align: center;
 	font: 16px/35px "微软雅黑";
+}
+
+.tbar-checkout .jtc-btn:hover {
+	text-decoration: none;
 }
 
 .tbar-cart-list {
@@ -2461,7 +2490,7 @@ sub {
 
 img {
 	width: auto\9;
-	height: auto;
+	/* height: auto; */
 	max-width: 100%;
 	border: 0;
 	vertical-align: middle;
@@ -8233,7 +8262,7 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 
 .sui-nav.nav-tabs.tab-wraped>li.active>a {
 	padding-top: 18px;
-	border-top: 3px solid #28a3ef;
+	border-top: 3px solid #d2424e;
 	border-bottom: 1px solid #fff;
 	background: #fff;
 	font-weight: 400;
@@ -9011,8 +9040,8 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 }
 
 .sui-pagination ul>li>a:focus,.sui-pagination ul>li>a:hover {
-	border-color: #4cb9fc;
-	background-color: #4cb9fc;
+	border-color: #e8351f;
+	background-color: #ea4a36;
 	color: #fff;
 }
 
@@ -9027,11 +9056,6 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 	border-color: #28a3ef;
 	background-color: #28a3ef;
 	color: #fff;
-}
-
-.sui-pagination ul>.dotted>a,.sui-pagination ul>.dotted>span {
-	border-top: 0;
-	border-bottom: 0;
 }
 
 .sui-pagination ul>.disabled>a,.sui-pagination ul>.disabled>a:focus,.sui-pagination ul>.disabled>a:hover,.sui-pagination ul>.disabled>span {
@@ -9409,7 +9433,7 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 	margin-bottom: 0;
 	padding: 2px 14px;
 	border: 1px solid #e1e1e1;
-	border: 1px solid #1299ec;
+	border: 1px solid #e8351f;
 	-webkit-border-radius: 2px;
 	-webkit-border-radius: 0;
 	-moz-border-radius: 2px;
@@ -9417,7 +9441,7 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 	border-radius: 2px;
 	border-radius: 0;
 	background-color: #eee;
-	background-color: #28a3ef;
+	background-color: #ea4a36;
 	color: #333;
 	color: #fff;
 	vertical-align: middle;
@@ -9622,8 +9646,8 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner {
 }
 
 .pagination-large div .page-num+.page-confirm:focus,.pagination-large div .page-num+.page-confirm:hover {
-	border: 1px solid #33affc;
-	background-color: #4cb9fc;
+	border: 1px solid #e33019;
+	background-color: #e64630;
 	color: #fff;
 }
 
@@ -13682,4 +13706,25 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 
 #yui3-css-stamp.cssgrids {
 	display: none;
+}
+
+
+
+.error-message {
+	color: #f60;
+	margin: -15px 0 5px;
+}
+
+.error-message::before {
+	content: '!!! '
+}
+
+.empty {
+	margin: 50px 0 100px;
+	padding: 100px;
+	border: 1px solid #e0e0e0;
+	text-align: center;
+	font-size: 3em;
+	font-weight: normal;
+	color: #444;
 }
